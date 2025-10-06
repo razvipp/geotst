@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relieful Europei și României - Resumat Geografic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c5530;
+            --secondary-color: #4a7c59;
+            --accent-color: #8fb996;
+            --light-color: #f8f9fa;
+            --dark-color: #1e2a1e;
+            --text-color: #333;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+            --europa-color: #3498db;
+            --romania-color: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            background-attachment: fixed;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            background-color: white;
+            padding: 1rem 0;
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+            background-color: rgba(74, 124, 89, 0.1);
+        }
+        
+        main {
+            padding: 2rem 0;
+        }
+        
+        .continent-section {
+            border-radius: var(--border-radius);
+            padding: 0;
+            margin-bottom: 3rem;
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+        
+        .continent-header {
+            padding: 2rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .europa-header {
+            background: linear-gradient(135deg, var(--europa-color), #2980b9);
+        }
+        
+        .romania-header {
+            background: linear-gradient(135deg, var(--romania-color), #c0392b);
+        }
+        
+        .continent-content {
+            padding: 2rem;
+            background-color: white;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        h4 {
+            color: var(--dark-color);
+            margin: 1.2rem 0 0.8rem;
+            padding-left: 10px;
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .card {
+            background-color: var(--light-color);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        
+        .europa-card {
+            border-left-color: var(--europa-color);
+        }
+        
+        .romania-card {
+            border-left-color: var(--romania-color);
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #fff9e6, #fff0cc);
+            border-left: 4px solid #e6b325;
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        
+        .mountain-section {
+            background: linear-gradient(135deg, #f0f7ff, #e6f2ff);
+            border-left: 4px solid #4a90e2;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+        }
+        
+        .plain-section {
+            background: linear-gradient(135deg, #f0f8f0, #e8f5e8);
+            border-left: 4px solid #7cb342;
+        }
+        
+        .page-break {
+            border-top: 2px dashed var(--accent-color);
+            margin: 2rem 0;
+            padding-top: 2rem;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            z-index: 99;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-links li {
+                margin: 0.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .continent-content {
+                padding: 1.5rem;
+            }
+        }
+        
+        .detail-list {
+            margin-left: 1rem;
+        }
+        
+        .sub-item {
+            margin-left: 1.5rem;
+        }
+        
+        .checkmark {
+            color: var(--secondary-color);
+            margin-right: 5px;
+        }
+        
+        .arrow {
+            color: var(--accent-color);
+            margin-right: 5px;
+        }
+        
+        .carpati-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .carpati-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-top: 4px solid var(--romania-color);
+        }
+        
+        .plain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .plain-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-top: 4px solid #7cb342;
+        }
+        
+        .unitati-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .unitati-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-top: 4px solid var(--europa-color);
+        }
+        
+        .section-divider {
+            height: 4px;
+            background: linear-gradient(90deg, var(--europa-color), var(--romania-color));
+            margin: 3rem 0;
+            border-radius: 2px;
+        }
+        
+        .page-indicator {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+        
+        .info-box {
+            background-color: #f0f8ff;
+            border-left: 4px solid #4a90e2;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .info-box h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .orogeneza-section {
+            background: linear-gradient(135deg, #f0f7ff, #e6f2ff);
+            border-left: 4px solid #4a90e2;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+        }
+        
+        .orogeneza-title {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .unitati-card h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-mountain"></i> Relieful Europei și României</h1>
+            <p class="subtitle">Resumat geografic complet - Toate informațiile din document</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-globe-europe"></i>
+                <span>Geografia României</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#europa"><i class="fas fa-flag"></i> Europa</a></li>
+                <li><a href="#romania"><i class="fas fa-tree"></i> România</a></li>
+                <li><a href="#carpati"><i class="fas fa-mountain"></i> Carpați</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <!-- SECȚIUNEA EUROPA -->
+        <section id="europa" class="continent-section">
+            <div class="continent-header europa-header">
+                <i class="fas fa-flag fa-2x"></i>
+                <div>
+                    <h2 style="color: white; border-bottom: none; margin: 0;">Relieful Europei</h2>
+                    <p style="margin: 0; opacity: 0.9;">Toate informațiile despre relieful european</p>
+                </div>
+            </div>
+            
+            <div class="continent-content">
+                <!-- Relieful derivat - Europa -->
+                <div class="card europa-card">
+                    <h3><i class="fas fa-fire"></i> Relieful vulcanic</h3>
+                    <p><i class="arrow fas fa-arrow-right"></i> cuprinde trei tipuri principale de elemente vulcanice;</p>
+                    <ul class="detail-list">
+                        <li><i class="checkmark fas fa-check"></i> platouri vulcanice în Islanda;</li>
+                        <li><i class="checkmark fas fa-check"></i> vulcani activi și semiactivi cu relief vulcanic alcătuit din conuri și cratere, în Italia;</li>
+                        <li><i class="checkmark fas fa-check"></i> un lanț vulcanic neogen stins în Carpați, cu relieful vulcanic modelat de agenții externi unde apar conuri vulcanice, neck-uri și mai rar cratere sau fragmente de cratere.</li>
+                    </ul>
+                </div>
+                
+                <div class="card europa-card">
+                    <h3><i class="fas fa-snowflake"></i> Relieful glaciar</h3>
+                    <ul class="detail-list">
+                        <li><i class="checkmark fas fa-check"></i> a apărut fie ca rezultat al acțiunii ghețarilor de calotă, fie ca rezultat al acțiunii ghețarilor montani;</li>
+                        <li><i class="checkmark fas fa-check"></i> Forme ale reliefului glaciar sunt:
+                            <ul class="sub-item">
+                                <li>în urma retragerii calotei glaciare s-au format morene, sandre, depresiuni;</li>
+                                <li>în urma topirii ghețarilor s-au format circuit, văi glaciare, morene, creste alpine.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="card europa-card">
+                    <h3><i class="fas fa-hill-rockslide"></i> Relieful carstic</h3>
+                    <p><i class="arrow fas fa-arrow-right"></i> s-a format pe roci carstificabile (calcare, sare, ghips) și este foarte diversificat în raport de condițiile concrete de carstificare.</p>
+                    <p>Cuprinde relief carstic de suprafață (lapiezuri, doline, uvale, polii, clipe calcare, chei, ponoare, poduri naturale) toate incluse în termenul exocarst și carstul de adâncime, endocarstul, alcătuit din peșteri.</p>
+                    <p>Cele mai reprezentative zone carstice din Europa sunt: Podișul Karst și Munții Alpi din Austria.</p>
+                </div>
+                
+                <div class="card europa-card">
+                    <h3><i class="fas fa-wind"></i> Relieful eolian</h3>
+                    <p>este format din câmpuri de dune de nisip și apar mai frecvent în sud-vestul Franței și în Câmpia Mării Caspice, Danemarca etc.</p>
+                </div>
+                
+                <div class="card europa-card">
+                    <h3><i class="fas fa-water"></i> Relieful litoral</h3>
+                    <p><i class="arrow fas fa-arrow-right"></i> cu florduri: Peninsula Scandinavică, Islanda, Arhipelagul Britanic;</p>
+                    <p><i class="arrow fas fa-arrow-right"></i> cu rias: nordul Spaniei, nord-vestul Franței, Marea Britanie;</p>
+                    <p><i class="arrow fas fa-arrow-right"></i> cu estuare la gurile de vărsare ale fluviilor: Sena, Tamisa, Severn, Elba, Peciora, Dvina de Nord;</p>
+                    <p><i class="arrow fas fa-arrow-right"></i> cu delte: Delta Volgăi, Delta Dunării, Delta Padului;</p>
+                    <p><i class="arrow fas fa-arrow-right"></i> cu lagune: la Marea Baltică și la Marea Neagră (sistemul Razelm-Sinoe);</p>
+                    <p><i class="arrow fas fa-arrow-right"></i> cu limane: la Marea Neagră (limanul Nistrului);</p>
+                    <p><i class="arrow fas fa-arrow-right"></i> cu canale (de tip dalmatic): pe litoralul Croației la Marea Adriatică;</p>
+                    <p><i class="arrow fas fa-arrow-right"></i> ţărm antropic: polderele olandeze.</p>
+                </div>
+
+                <!-- Lecția 2 Relieful Europei -->
+                <div class="card europa-card">
+                    <h3><i class="fas fa-book"></i> Lecția 2 - Relieful Europei</h3>
+                    
+                    <h4>RELIEFUL DERIVAT</h4>
+                    <p>Este rezultatul acțiunii agenților externi asupra reliefului major. Cele mai vechi forme se regăsesc la nivelul interfluviilor, iar cele mai noi la nivelul văilor.</p>
+                    
+                    <h4>1. Suprafețele de eroziune</h4>
+                    <ul class="detail-list">
+                        <li>- sunt rezultatul nivelării munților sau dealurilor înalte, apar sub forma peneplenelor în masivele vechi sau sub forma platourilor în sistemul alpin</li>
+                    </ul>
+                    
+                    <h4>2. Terasele și luncile</h4>
+                    <ul class="detail-list">
+                        <li>- s-au format ca urmare a alternanței climatice și ridicărilor tectonice</li>
+                        <li>- sunt favorabile amplasării așezărilor, agriculturii, căilor de comunicație</li>
+                        <li>- ca număr diferă în funcție de unitatea de relief având 4-8 trepte mai ales în Europa Centrală și de Sud</li>
+                    </ul>
+                    
+                    <h4>3. Piemonturile și glacisurile</h4>
+                    <ul class="detail-list">
+                        <li>- apar sub forma unor câmpii sau podișuri la contactul dintre munți și depresiuni mai ales în Europa Sudică</li>
+                    </ul>
+                    
+                    <h4>4. Relieful glaciar</h4>
+                    <ul class="detail-list">
+                        <li>- este rezultatul eroziunii ghețarilor de calotă din nordul continentului și al celor montani instalați la peste 1800 m în trecut azi la peste 3000 m</li>
+                        <li>- se prezintă sub forma de: circumglaciare (în prezent ocupate de lacuri glaciare), văi glaciare (U), praguri, morene</li>
+                    </ul>
+                    
+                    <h4>5. Relieful carstic</h4>
+                    <ul class="detail-list">
+                        <li>- se dezvoltă pe roci dizolvabile, unde apar goluri, iar prin precipitare apar cruste și forme pozitive</li>
+                        <li>- Pod. Karst-Slovenia:</li>
+                        <li>- pe calcare și gips (Optimiceskaia, Ucraina) apar: platouri carstice cu lapiezuri, doline, chei, peșteri-Holoch, Elveția (în interiorul cărora apar stalactite-Cuevas de Nerja, Spania, stalagmite-Krasnohorska, Slovacia, draperii etc)</li>
+                        <li>- pe sare apar forme efemere: lapiezuri, avene, peșteri (6 S -Romania), prăbușiri, alunecări, depresiuni (în care se instalează lacurile sărate)</li>
+                    </ul>
+                    
+                    <h4>6. Relieful colian</h4>
+                    <ul class="detail-list">
+                        <li>- format din câmpuri de dune S Franței, C. Precaspică</li>
+                    </ul>
+                    
+                    <h4>7. Relieful vulcanic</h4>
+                    <ul class="detail-list">
+                        <li>- include vulcanii stinși și platourile vulcanice din pliocen precum și vulcanii activi din Cuaternar: Vezuviu, Etna, Stromboli, Vulcano etc</li>
+                    </ul>
+                    
+                    <h4>8. Relieful litoral</h4>
+                    <ul class="detail-list">
+                        <li>- este cel mai recent fiind rezultatul evoluției din ultimele milenii</li>
+                        <li>- este reprezentat de: faleze plaje, limane și lagune</li>
+                        <li>- în funcție de geneză țărmurile se împart:
+                            <ul class="sub-item">
+                                <li>o țărmuri cu fiorduri: Europa de Nord</li>
+                                <li>o țărmuri cu rias: Marea Britanie, NV Franței</li>
+                                <li>o țărmuri cu canale: V Croației</li>
+                                <li>o țărmuri cu delte: Volga, Dunăre, Pad</li>
+                                <li>o țărmuri cu estuare: Tamisa, Elba, Sena, Loara</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SUBDIVIZIUNI -->
+                <div class="card europa-card">
+                    <h3><i class="fas fa-mountain"></i> SUBDIVIZIUNI - Munții Europei</h3>
+                    
+                    <h4>M-ții Alpi = caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza alpină</li>
+                        <li>prezintă cele mai mari altitudini ⇒ 4 807 m vf. Mont Blanc</li>
+                        <li>limite: M. Ligurică- C. Panonică</li>
+                        <li>prezintă cea mai mare masivitate, cel mai extins relief glaciar, iar în E apare relieful carstic</li>
+                    </ul>
+                    
+                    <h4>M-ții Carpați = caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza alpină</li>
+                        <li>prezintă altitudini intermediare între Alpi și Balcani ⇒ 2 655 m vf. Gerlachovka</li>
+                        <li>limite: Bazinul Vienei-v. Timokului</li>
+                        <li>au o masivitate mai redusă decât Alpii</li>
+                    </ul>
+                    
+                    <h4>M-ții Pirinei = caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza alpină</li>
+                        <li>prezintă altitudini > 3 000 m, masivitate remarcabilă și relief glaciar</li>
+                        <li>limite: Oc. Atlantic- M. Mediterană</li>
+                    </ul>
+
+                    <h4>M-ții Apenini ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza alpină</li>
+                        <li>prezintă altitudini de 2 900 m (GranSasso), culme paralele orientate N-S</li>
+                        <li>apare relieful vulcanic</li>
+                    </ul>
+                    
+                    <h4>M-ții Balcani ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza alpină</li>
+                        <li>prezintă altitudini de 2 376 m vf. Botev</li>
+                    </ul>
+                    
+                    <h4>M-ții Alpii Dinarici ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza alpină</li>
+                        <li>relieful carstic este extins</li>
+                        <li>apre țărmul de tip dalmatin (cu canale)</li>
+                    </ul>
+                    
+                    <h4>M-ții Caucaz ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza alpină</li>
+                        <li>prezintă altitudini mari și o tectonică activă</li>
+                    </ul>
+                    
+                    <h4>M-ții Pindului ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza alpină</li>
+                        <li>prezintă altitudini de 2 911 m vf. Olimp</li>
+                        <li>prezintă relief carstic și ruiniform</li>
+                    </ul>
+                    
+                    <h4>Masivul Central Francez ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>format în orogeneza hercinică</li>
+                        <li>prezintă altitudini medii de 700 m ⇒ maximă 1 886 m vf. Mt. Dore</li>
+                        <li>prezintă relief vulcanic (centru și N) intens erodat, carst (S și SV) și tectonic (grabene în centru)</li>
+                    </ul>
+                    
+                    <h4>M-ții Ural ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza hercinică</li>
+                        <li>prezintă altitudini medii de 600 m</li>
+                        <li>au aspectul unui lanț muntos orientat N↔S ⇒ 2 000 Km</li>
+                    </ul>
+                    
+                    <h4>Meseta Spaniolă ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formată în orogeneza hercinică</li>
+                        <li>prezintă un relief intens erodat și faliat, dominat izolat de culmi muntoase rezultate în urma reînălțărilor din Cuaternar</li>
+                    </ul>
+                    
+                    <h4>M-ții Vosgi-Pădurea Neagră ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza hercinică</li>
+                        <li>se prezintă sub forma a două masive separate de grabenul Rinului, intens erodate</li>
+                    </ul>
+                    
+                    <h4>Masivul Șistos Renan ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>format în orogeneza hercinică</li>
+                        <li>orientat E↔V, tăiat de valea Rinului</li>
+                        <li>prezintă relief vulcanic</li>
+                    </ul>
+                    
+                    <h4>M-ții Jura ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza hercinică</li>
+                        <li>prezintă relief de tip jurasian</li>
+                        <li>altitudinile sunt reduse</li>
+                    </ul>
+                    
+                    <h4>Patrulaterul Boemiei ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>format în orogeneza hercinică</li>
+                        <li>prezintă altitudini reduse</li>
+                        <li>include: Pod. Boemiei străbătut de M-ții Pădurea Boemiei și încadrat de M-ții Sudeti, M-ții Metaliferi și Colinele Ceho-Morave</li>
+                    </ul>
+                    
+                    <h4>M-ții Penini ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza caledoniană</li>
+                        <li>prezintă înălțimi reduse < 900m intens erodați</li>
+                        <li>prezintă relief carstic</li>
+                    </ul>
+                    
+                    <h4>M-ții Scandinavici ⇒ caracteristici</h4>
+                    <ul class="detail-list">
+                        <li>formați în orogeneza caledoniană</li>
+                        <li>prezintă altitudini > 2 000 m datorită reînălțărilor alpine</li>
+                        <li>prezintă un versant abrupt spre ocean modelat de ghețari (fiorduri) și domol spre Pod. Suediei</li>
+                    </ul>
+                </div>
+
+                <!-- Unități majore de relief -->
+                <div class="card europa-card">
+                    <h3><i class="fas fa-globe"></i> Unități majore de relief din Europa</h3>
+                    
+                    <!-- Orogeneza caledoniană -->
+                    <div class="orogeneza-section">
+                        <h3 class="orogeneza-title"><i class="fas fa-mountain"></i> Unități montane - Orogeneza caledoniană:</h3>
+                        
+                        <div class="unitati-grid">
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-compass"></i> Alpii Scandinaviei</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Norvegia și Suedia</li>
+                                    <li><strong>Altitudine maximă:</strong> 2469 m (Vârful Galdhøpiggen)</li>
+                                    <li><strong>Caracteristici:</strong> Relief glaciar, fiorduri pe coasta Mării Norvegiei</li>
+                                    <li><strong>Formare:</strong> Orogeneza caledoniană</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-hill-rockslide"></i> Munții Grampieni</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Scotia (Marea Britanie)</li>
+                                    <li><strong>Altitudine maximă:</strong> 1343 m (Vârful Ben Nevis)</li>
+                                    <li><strong>Caracteristici:</strong> Altitudini reduse, roci dure</li>
+                                    <li><strong>Formare:</strong> Orogeneza caledoniană</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-mountain"></i> Munții Cambrieni</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Marea Britanie</li>
+                                    <li><strong>Altitudine maximă:</strong> 1100 m</li>
+                                    <li><strong>Caracteristici:</strong> Altitudini reduse, erodare intensă, faliere, calcare, relief carstic</li>
+                                    <li><strong>Formare:</strong> Orogeneza caledoniană</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-mountain"></i> Munții Penini</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Marea Britanie</li>
+                                    <li><strong>Altitudine maximă:</strong> 893 m</li>
+                                    <li><strong>Caracteristici:</strong> Altitudini reduse, erodare intensă, faliere, calcare, relief carstic</li>
+                                    <li><strong>Formare:</strong> Orogeneza caledoniană</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Orogeneza hercinică -->
+                    <div class="orogeneza-section">
+                        <h3 class="orogeneza-title"><i class="fas fa-mountain"></i> Unități montane - Orogeneza hercinică:</h3>
+                        
+                        <div class="unitati-grid">
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-hill-rockslide"></i> Meseta Spaniolă</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Spania centrală</li>
+                                    <li><strong>Altitudine maximă:</strong> 2592 m (Sierra de Gredos)</li>
+                                    <li><strong>Caracteristici:</strong> Podișuri vălurite (mesetas) și lanțuri montane (sierras), roci metamorfice, relief ruiniform</li>
+                                    <li><strong>Formare:</strong> Orogeneza hercinică, reînălțată în orogeneza alpină</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-fire"></i> Masivul Central Francez</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Franța central-sudică</li>
+                                    <li><strong>Altitudine maximă:</strong> 1886 m (Vârful Puy de Sancy)</li>
+                                    <li><strong>Caracteristici:</strong> Relief vulcanic cu conuri și cratere, roci metamorfice și vulcanice, relief carstic în sud</li>
+                                    <li><strong>Formare:</strong> Orogeneza hercinică</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-mountain"></i> Munții Jura</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Granița Franța-Elveția-Germania</li>
+                                    <li><strong>Altitudine maximă:</strong> 1723 m (Vârful Crêt de la Neige)</li>
+                                    <li><strong>Caracteristici:</strong> Relief jurasian (cute regulate și paralele), roci metamorfice și calcaroase, relief carstic</li>
+                                    <li><strong>Formare:</strong> Orogeneza hercinică</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-fire"></i> Masivul Șistos Renan</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Germania (de o parte și alta a Rinului)</li>
+                                    <li><strong>Altitudine maximă:</strong> 600-800 m</li>
+                                    <li><strong>Caracteristici:</strong> Relief vulcanic cu maare (depresiuni vulcanice circulare cu lacuri), roci metamorfice</li>
+                                    <li><strong>Formare:</strong> Orogeneza hercinică</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-tree"></i> Munții Pădurea Neagră</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Germania</li>
+                                    <li><strong>Altitudine maximă:</strong> 1400 m</li>
+                                    <li><strong>Caracteristici:</strong> Roci metamorfice, izvorul Dunării</li>
+                                    <li><strong>Formare:</strong> Orogeneza hercinică</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-mountain"></i> Munții Ural</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Rusia (granița Europa-Asia)</li>
+                                    <li><strong>Altitudine maximă:</strong> 1895 m (Vârful Narodnaia)</li>
+                                    <li><strong>Caracteristici:</strong> 2000 km lungime, orientare nord-sud, culmi paralele, relief glaciar în nord, relief carstic și vulcanic în centru, relief deluros în sud</li>
+                                    <li><strong>Formare:</strong> Orogeneza hercinică</li>
+                                </ul>
+                            </div>
+                            
+                          
+                           
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Orogeneza alpină -->
+                    <div class="orogeneza-section">
+                        <h3 class="orogeneza-title"><i class="fas fa-mountain"></i> Unități montane - Orogeneza alpină:</h3>
+                        
+                        <div class="unitati-grid">
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-mountain"></i> Cordiliera Betică</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Sudul Spaniei</li>
+                                    <li><strong>Altitudine maximă:</strong> 3478 m (Vârful Mulhacén)</li>
+                                    <li><strong>Caracteristici:</strong> Orientare vest-est, roci metamorfice</li>
+                                    <li><strong>Formare:</strong> Orogeneza alpină</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-snowflake"></i> Munții Pirinei</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Granița Spania-Franța</li>
+                                    <li><strong>Altitudine maximă:</strong> 3404 m (Pico de Aneto)</li>
+                                    <li><strong>Caracteristici:</strong> Roci metamorfice, relief glaciar, ghețari, Pirineii Centrali foarte masivi</li>
+                                    <li><strong>Formare:</strong> Orogeneza alpină</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-glacier"></i> Munții Alpi</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Monaco, Franța, Italia, Elveția, Lichtenstein, Germania, Austria, Slovenia</li>
+                                    <li><strong>Altitudine maximă:</strong> 4807 m (Vârful Mont Blanc)</li>
+                                    <li><strong>Caracteristici:</strong> Masivitate, roci metamorfice și calcaroase, relief glaciar și carstic</li>
+                                    <li><strong>Formare:</strong> Orogeneza alpină</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-fire"></i> Munții Apenini</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Italia</li>
+                                    <li><strong>Altitudine maximă:</strong> 2912 m (Córno Grande)</li>
+                                    <li><strong>Caracteristici:</strong> Culmi orientate nord-sud, roci metamorfice, alunecări de teren în nord, relief vulcanic și vulcani activi (Vezuviu, Etna, Stromboli) în sud</li>
+                                    <li><strong>Formare:</strong> Orogeneza alpină</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-hill-rockslide"></i> Munții Dinarici (Alpii Dinarici)</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Slovenia, Croația, Bosnia-Herțegovina, Serbia, Muntenegru, Albania</li>
+                                    <li><strong>Altitudine maximă:</strong> 2692 m (Vârful Jezerski)</li>
+                                    <li><strong>Caracteristici:</strong> Culmi paralele care se extind în Marea Adriatică (țărm dalmatin), roci calcaroase, relief carstic</li>
+                                    <li><strong>Formare:</strong> Orogeneza alpină</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-mountain"></i> Munții Carpați</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Austria, Cehia, Slovacia, Polonia, Ungaria, Ucraina, România, Serbia</li>
+                                    <li><strong>Altitudine maximă:</strong> 2655 m (Vârful Gerlachovka din Munții Tatra)</li>
+                                    <li><strong>Caracteristici:</strong> Roci metamorfice, sedimentare și vulcanice, relief glaciar, carstic, vulcanic</li>
+                                    <li><strong>Formare:</strong> Orogeneza alpină</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-mountain"></i> Munții Balcani (Stara Planina)</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Bulgaria, Serbia</li>
+                                    <li><strong>Altitudine maximă:</strong> 2376 m (Vârful Botev)</li>
+                                    <li><strong>Caracteristici:</strong> Roci metamorfice, două culmi principale</li>
+                                    <li><strong>Formare:</strong> Orogeneza alpină</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-mountain"></i> Munții Pindului</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Grecia</li>
+                                    <li><strong>Altitudine maximă:</strong> 2911 m (Vârful Olimp)</li>
+                                    <li><strong>Caracteristici:</strong> Roci metamorfice</li>
+                                    <li><strong>Formare:</strong> Orogeneza alpină</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="unitati-card">
+                                <h4><i class="fas fa-mountain"></i> Munții Caucaz</h4>
+                                <ul class="detail-list">
+                                    <li><strong>Locație:</strong> Rusia, Georgia, Armenia, Azerbaidjan</li>
+                                    <li><strong>Altitudine maximă:</strong> 5642 m (Vârful Elbrus)</li>
+                                    <li><strong>Caracteristici:</strong> Masivitate, relief vulcanic, carstic și glaciar, tectonică activă</li>
+                                    <li><strong>Formare:</strong> Orogeneza alpină</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unități de podiș -->
+                <div class="card europa-card">
+                    <h3><i class="fas fa-hill-rockslide"></i> Unități de podiș</h3>
+                    
+                    <h4>Podișul Finlandei</h4>
+                    <ul class="detail-list">
+                        <li>situat în Finlanda, suprapus pe Scutul Baltic</li>
+                        <li>altitudini sub 1000 m (exceptie nord-vest 1324 m)</li>
+                        <li>șisturi cristaline, granite, relief glaciar cu lacuri</li>
+                    </ul>
+                    
+                    <h4>Podișul Norland (Suediei)</h4>
+                    <ul class="detail-list">
+                        <li>Suedia, fundament precambrian acoperit de sedimente</li>
+                        <li>afectat de glaciația cuaternară</li>
+                        <li>altitudini 300-600 m</li>
+                    </ul>
+                    
+                    <h4>Podișul Volano-Podolic</h4>
+                    <ul class="detail-list">
+                        <li>Ucraina, suprapus pe Platforma Est-Europeană</li>
+                        <li>altitudini 350-450 m</li>
+                    </ul>
+                    
+                    <h4>Podișul Boemiei</h4>
+                    <ul class="detail-list">
+                        <li>Cehia, fundament hercinic</li>
+                        <li>altitudini sub 400 m</li>
+                    </ul>
+                    
+                    <h4>Podișul Bavariei</h4>
+                    <ul class="detail-list">
+                        <li>Germania</li>
+                        <li>altitudini 400-1000 m</li>
+                    </ul>
+                </div>
+
+                <!-- Câmpii Europei -->
+                <div class="card europa-card">
+                    <h3><i class="fas fa-map"></i> Câmpii majore ale Europei</h3>
+                    
+                    <div class="plain-grid">
+                        <div class="plain-card">
+                            <h4><i class="fas fa-globe-europe"></i> Câmpia Europei de Est</h4>
+                            <ul class="detail-list">
+                                <li><strong>Locație:</strong> Rusia și Belarus</li>
+                                <li><strong>Suprafață:</strong> A doua ca suprafață de pe Glob</li>
+                                <li><strong>Altitudini:</strong> Între 463 m în N la (-28) m în zona Mării Caspice</li>
+                                <li><strong>Subunități:</strong> Pod. Valdai, Colinele Timan, Pod. Central Rus, Pod. Volgăi</li>
+                                <li><strong>Orientare râuri:</strong> N↔S</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="plain-card">
+                            <h4><i class="fas fa-water"></i> Câmpia Nord-Europeană (Germano-Polonă)</h4>
+                            <ul class="detail-list">
+                                <li><strong>Locație:</strong> Olanda, Danemarca, Germania, Polonia, Lituania</li>
+                                <li><strong>Poziționare:</strong> Între Marea Nordului și Marea Baltică</li>
+                                <li><strong>Caracteristici:</strong> Caracter fluvio-glaciar, morene și sandre</li>
+                                <li><strong>Particularități:</strong> În Olanda - altitudini negative și poldere</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="plain-card">
+                            <h4><i class="fas fa-umbrella-beach"></i> Câmpia Padului</h4>
+                            <ul class="detail-list">
+                                <li><strong>Locație:</strong> Italia strabatuta de fluviul pad </li>
+                                <li><strong>Origine:</strong> Formata prin depunere de sedimente aduse de raurile din Muntii Alpi,Într-un vechi golf al marii Adriatice</li>
+                                <li><strong>Caracteristici:</strong> Câmpie piemontană cu caracter fluvial</li>
+                                <li><strong>Altitudini</strong> sub 200m</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="plain-card">
+                            <h4><i class="fas fa-tint"></i> Câmpia Panonică</h4>
+                            <ul class="detail-list">
+                                <li><strong>Locație:</strong> Ungaria, Austria, Slovacia, Serbia și România</li>
+                                <li><strong>Origine:</strong> Caracter fluvial Formată prin sedimentarea Lacului Panonic</li>
+                                <li><strong>Caracteristici:</strong> Intens faliată, sectoare joase (sub 150) și înalte (150-300)</li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="plain-card">
+                            <h4><i class="fas fa-wind"></i> Câmpia Precaspică</h4>
+                            <ul class="detail-list">
+                                <li><strong>Locație:</strong> Rusia</li>
+                                <li><strong>Tip:</strong> Câmpie litorală</li>
+                                <li><strong>Origine:</strong> Formată ca urmare a coborarii nivelului Marii Carspice sub nivelul Oc Planetar</li>
+                                <li><strong>Caracteristici:</strong> Aici se dezvolta cea mai mare delta din Europa (Delta Volgai) Altitudini negative (-28 m),In partea Sudica apare un relief eolian cu dune de nisip</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="plain-card">
+                            <h4><i class="fas fa-snowflake"></i> Câmpia Finlandei</h4>
+                            <ul class="detail-list">
+                                <li><strong>Locație:</strong> Finlanda</li>
+                                <li><strong>Structură:</strong> Suprapusă pe Scutul Baltic de varsta precambriana pe care s-au depus sedimente</li>
+                                <li><strong>Caracteristici:</strong> Caracter fluvio-glaciar, A fost afectata de glaciatia cuaternara existand numeroase depresiuni cu lacuri glaciare</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="plain-card">
+                            <h4><i class="fas fa-snowflake"></i> Câmpia Romana</h4>
+                            <ul class="detail-list">
+                                <li><strong>Locație:</strong> Romania</li>
+                                <li><strong>Structură:</strong> Situata pe cursul interior al Dunarii</li>
+                                <li><strong>Caracteristici:</strong> Caracter fluvil,format in cuatemar prin sedimentarea lacului getic
+                                <li>
+                                    sectoare joase de subsistenta (sub 50m) <br>
+                                    tabulare (50-100m) <br>
+                                    piemontane (100-300m)
+                                </li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informații suplimentare despre Europa -->
+                <div class="card europa-card">
+                    <h3><i class="fas fa-info-circle"></i> Informații suplimentare despre relieful Europei</h3>
+                    
+                    <h4>Caracteristici generale ale reliefului european:</h4>
+                    <ul class="detail-list">
+                        <li>Europa are o suprafață de aproximativ 10,18 milioane km²</li>
+                        <li>Altitudinea medie este de 340 m</li>
+                        <li>Cel mai înalt punct: Mont Blanc (4.807 m) în Alpi</li>
+                        <li>Cel mai jos punct: Marea Caspică (-28 m)</li>
+                        <li>Distribuția reliefului:
+                            <ul class="sub-item">
+                                <li>33% munți</li>
+                                <li>29% dealuri și podișuri</li>
+                                <li>38% câmpii</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h4>Regiuni morfologice majore:</h4>
+                    <ul class="detail-list">
+                        <li><strong>Europa de Nord:</strong> Munții Scandinavici, Podișul Finlandei, Câmpia Nord-Europeană</li>
+                        <li><strong>Europa Centrală:</strong> Alpi, Carpați, Câmpia Panonică, Podișul Boemiei</li>
+                        <li><strong>Europa de Vest:</strong> Masivul Central Francez, Munții Pirinei, Câmpia Padului</li>
+                        <li><strong>Europa de Est:</strong> Câmpia Europei de Est, Munții Ural</li>
+                        <li><strong>Europa de Sud:</strong> Munții Apenini, Munții Balcani, Munții Dinarici</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- SECȚIUNEA ROMÂNIA -->
+        <section id="romania" class="continent-section">
+            <div class="continent-header romania-header">
+                <i class="fas fa-tree fa-2x"></i>
+                <div>
+                    <h2 style="color: white; border-bottom: none; margin: 0;">Relieful României</h2>
+                    <p style="margin: 0; opacity: 0.9;">Toate informațiile despre relieful românesc</p>
+                </div>
+            </div>
+            
+            <div class="continent-content">
+                <!-- Relieful derivat - România -->
+                <div class="card romania-card">
+                    <h3>RELIEFUL DERIVAT - România</h3>
+                    <p>Este rezultatul acțiunii agenților externi asupra reliefului major. Cele mai vechi forme se regăsesc la nivelul interfluviilor, iar cele mai noi la nivelul văilor.</p>
+                </div>
+                
+                <div class="card romania-card">
+                    <h3>1. Suprafețele de eroziune</h3>
+                    <ul class="detail-list">
+                        <li>- sunt rezultatul nivelării munților sau dealurilor înalte</li>
+                        <li>- se desfășoară la altitudini diferite dat fiind faptul că mulți au fost înălțați diferit</li>
+                        <li>- în zonele de deal și podiș numărul lor este mai mic</li>
+                        <li>- în Carpați sunt situate la diferite altitudini, cele mai caracteristice fiind:
+                            <ul class="sub-item">
+                                <li> platforma Borăscu ⇒ 2 000 – 2 200 m</li>
+                                <li> platforma Râu – Şes ⇒ 1 000 – 1 200 m</li>
+                                <li> platforma Gornovița (Predeal) ⇒ 1 000 m</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="card romania-card">
+                    <h3>2. Terasele fluviale</h3>
+                    <ul class="detail-list">
+                        <li>- s-au format ca urmare a alternanței climatice și ridicărilor tectonice din Cuaternar</li>
+                        <li>- sunt favorabile amplasării așezărilor, agriculturii, căilor de comunicație</li>
+                        <li>- ca număr diferă în funcție de unitatea de relief:
+                            <ul class="sub-item">
+                                <li> 6-8 în Carpați și Subcarpați</li>
+                                <li> 3-5 în zonele de deal și podiș</li>
+                                <li> 1-3 în zonele de câmpie</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="card romania-card">
+                    <h3>3. Luncile</h3>
+                    <ul class="detail-list">
+                        <li>- s-au format în ultima parte a Cuaternarului</li>
+                        <li>- sunt extinse și largi pe râurile principale în zonele de câmpie, deal și depresiuni, iar pe râurile mici și zonele de defileu sunt reduse ca suprafață</li>
+                    </ul>
+                </div>
+                
+                <div class="card romania-card">
+                    <h3>4. Relieful glaciar</h3>
+                    <ul class="detail-list">
+                        <li>- este rezultatul eroziunii ghețarilor instalați pe culmile Carpaților în Pleistocene (prima perioadă a Cuaternarului)</li>
+                        <li>- se prezintă sub forma de: circumglaciare (în prezent ocupate de lacuri glaciare), văi glaciare (U) cu lungimi de 1-8 km, praguri, morene</li>
+                    </ul>
+                </div>
+                
+                <div class="card romania-card">
+                    <h3>5. Relieful carstic</h3>
+                    <ul class="detail-list">
+                        <li>- se dezvoltă pe roci dizolvabile, unde apar goluri, iar prin precipitare apar cruste și forme pozitive</li>
+                        <li>- pe calcare și dolomite apar: platouri carstice cu lapiezuri, doline, chei, peșteri (în interiorul cărora apar stalactite, stalagmite, draperii etc)</li>
+                        <li>- pe sare apar forme efemere: lapiezuri, avene, peșteri (Meledic - Bz), prăbușiri, alunecări, depresiuni (în care se instalează lacurile sărate)</li>
+                    </ul>
+                </div>
+
+                <div class="card romania-card">
+                    <h3>6. Relieful pe nisip</h3>
+                    <ul class="detail-list">
+                        <li>- în zonele de câmpie (C. Olteniei) și luncile marilor râuri (Ialomița, Buzău) apar dunele de nisip, iar în Dep. Brașov și văile râurilor apar grindurile</li>
+                    </ul>
+                </div>
+                
+                <div class="card romania-card">
+                    <h3>7. Relieful pe loess</h3>
+                    <ul class="detail-list">
+                        <li>- apare mai ales în zonele de câmpie dar și în Pod. Moldovei și Pod. Dobrogei</li>
+                        <li>- prin tasare și sufoziune ⇒ crowni, hrube și pâlnii de sufoziune</li>
+                    </ul>
+                </div>
+                
+                <div class="card romania-card">
+                    <h3>8. Relieful vulcanic</h3>
+                    <ul class="detail-list">
+                        <li>- include forme create de vulcani și acțiunea agenților externi asupra rocilor magmatice</li>
+                        <li>- din prima categorie fac parte: lanțul vulcanic din V Carpaților Orientali, unde se disting cratere, conuri, platouri</li>
+                        <li>- din a doua categorie fac parte măguri, culmi rotunjite, ziduri (Detunatele)</li>
+                    </ul>
+                </div>
+                
+                <div class="card romania-card">
+                    <h3>9. Relieful pe conglomerate</h3>
+                    <ul class="detail-list">
+                        <li>- este o rocă neconsolidată pe care se dezvoltă: babe, sfincși, coloane, ciuperci</li>
+                    </ul>
+                </div>
+                
+                <div class="card romania-card">
+                    <h3>10. Relieful litoral</h3>
+                    <ul class="detail-list">
+                        <li>- este cel mai recent fiind rezultatul evoluției din ultimele milenii</li>
+                        <li>- este reprezentat de: Delta Dunării, lagune, limane maritime, faleze, plaje, golfuri mici</li>
+                    </ul>
+                </div>
+
+                <!-- Unități de relief majore din România -->
+                <div class="card romania-card">
+                    <h3><i class="fas fa-mountain"></i> Unități de relief majore din România</h3>
+                    
+                    <h4>Munții Carpați (35% din suprafața țării)</h4>
+                    <ul class="detail-list">
+                        <li>Carpații Orientali</li>
+                        <li>Carpații Meridionali</li>
+                        <li>Carpații Occidentali</li>
+                    </ul>
+                    
+                    <h4>Podișurile (15% din suprafața țării)</h4>
+                    <ul class="detail-list">
+                        <li>Podișul Dobrogei</li>
+                        <li>Podișul Mehedinți</li>
+                        <li>Podișul Getic</li>
+                        <li>Podișul Moldovei</li>
+                        <li>Podișul Transilvaniei</li>
+                    </ul>
+                    
+                    <h4>Câmpiile (30% din suprafața țării)</h4>
+                    <ul class="detail-list">
+                        <li>Câmpia Română</li>
+                        <li>Câmpia Moldovei</li>
+                        <li>Câmpia Olteniei</li>
+                        <li>Câmpia Banatului</li>
+                        <li>Câmpia Crișurilor</li>
+                    </ul>
+                    
+                    <h4>Depresiunile (20% din suprafața țării)</h4>
+                    <ul class="detail-list">
+                        <li>Depresiunea Transilvaniei</li>
+                        <li>Depresiunea Maramureșului</li>
+                        <li>Depresiunea Făgăraș</li>
+                        <li>Depresiunea Brașov</li>
+                        <li>Depresiunea Hațeg</li>
+                    </ul>
+                </div>
+
+                <!-- Munții Carpați ai României -->
+                <div id="carpati" class="mountain-section">
+                    <h3><i class="fas fa-mountain"></i> Munții Carpați ai României</h3>
+                    
+                    <div class="highlight">
+                        <h4><i class="fas fa-info-circle"></i> Caracteristici generale</h4>
+                        <ul class="detail-list">
+                            <li>- fac parte din lanțul muntos alpino-carpato-himalayan, format în <strong>orogeneza alpină</strong></li>
+                            <li>- au o lungime de ≈ 1300 km ⇒ al III-lea lanț muntos din Europa, din care 2/3 pe teritoriul României (910 km)</li>
+                            <li>- joacă rolul de barieră orografică pentru masele de aer din V, E și S</li>
+                            <li>- prin altitudine influențează varietatea asociațiilor vegetale, faunistice, tipurile de sol și apariția unor topoclimate (climate locale)</li>
+                            <li>- sunt puternic fragmentați de depresiuni, văi longitudinale și transversale, pasuri și trecători, suprafețe de eroziune ⇒ umanizarea și circulația intensă</li>
+                            <li>- au rezultat în urma coliziunii dintre microplăcile: Transilvaniei, Euroasiatică, Mării Negre, Moesică, Panonică</li>
+                            <li>Din punct de vedere fizico-geografic și structural se împart în:</li>
+                            <ul class="sub-item">
+                                <li>1. <strong>Carpații Orientali</strong> - granița cu Ucraina și valea Prahovei</li>
+                                <li>2. <strong>Carpații Meridionali</strong> - valea Prahovei și culoarul Timiș-Cerna-Bistra</li>
+                                <li>3. <strong>Carpații Occidentali</strong> - v. Barcaului și Dunăre</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    
+                    <div class="carpati-grid">
+                        <div class="carpati-card">
+                            <h4><i class="fas fa-compass"></i> 1. Carpații Orientali</h4>
+                            <p><strong>Caracteristici generale:</strong></p>
+                            <ul class="detail-list">
+                                <li>- este cea mai extinsă ramură a Carpaților (peste 50% din suprafața acestora)</li>
+                                <li>- prezintă cea mai mare lățime 130-140 km în N și 80 km în zona de curbură</li>
+                                <li>- <strong>altitudinea maximă 2 303 m vf. Pietrosul Rodnei</strong></li>
+                                <li>- relieful derivat este variat: petrografic, vulcanic, fluvial, eolian, etc</li>
+                                <li>- la altitudini de peste 2 000 m apare relieful glaciar</li>
+                                <li>- relieful este dispus în fășii paralele, alcătuirea petrografică evidențiază un adevărat paralelism al culmilor, orientate pe direcție NV-SE (excepție Carpații de Curbură orientați invers, pe direcție NE-SV)</li>
+                                <li>- în Vest alcătuite din roci vulcanice ⇒ munți vulcanici mai înalți și cu cratere și conuri mai bine păstrate în Grupa Centrală decât în Grupa Nordică, cu numeroase izvoare minerale</li>
+                                <li>- în Centru alcătuite din roci metamorfice-șisturi cristaline (zona cristalino-mezozoică) ⇒ cea mai veche, dezvoltă cele mai mari altitudini, ce scad de la N spre S (spre izvoarele Trotușului)</li>
+                                <li>- în Est alcătuite din roci sedimentare-fliș ⇒ cu altitudinile cele mai mici și extensiune maximă în zona de curbură unde ocupă întreaga zonă</li>
+                                <li>- numeroase resurse precum: păduri (40%) de conifere, amestec și foioase, pășuni, minereuri feroase și neferoase, mangan, hidroenergie etc.</li>
+                                <li>- deține un potențial turistic deosebit</li>
+                            </ul>
+                            
+                            <h4>A. Grupa Nordică (Carpații Maramureșului și Bucovinei)</h4>
+                            <ul class="detail-list">
+                                <li>- prezintă cea mai mare lățime 130-140 km</li>
+                                <li>- altitudinea maximă – <strong>2303 m, vf. Pietrosul Rodnei</strong></li>
+                                <li>- este singura în care se păstrează relieful glaciar în M. Rodnei (lacurile glaciare Lala și Buhăiescu)</li>
+                                <li>- culmile sunt orientate pe direcție NV-SE, fiind paralele, paralelism evidențiat și de alcătuirea petrografică</li>
+                                <li>- în V se dezvoltă lanțul de munți vulcanici, în centru munții cristalino-mezozolici, iar în est munții mai joși din fliș</li>
+                                <li>- munții vulcanici sunt mai joși, cu cratere și conuri vulcanice mai slab dezvoltate</li>
+                            </ul>
+                            
+                            <h4>B. Grupa Centrală (Carpații Moldo-Transilvani)</h4>
+                            <ul class="detail-list">
+                                <li>- altitudinea maximă <strong>2 100 m vf Pietrosul Călimanilor din M. Călimani</strong></li>
+                                <li>- lipsește relieful glaciar</li>
+                                <li>- relieful carstic de suprafață prezintă o mai mare extensiune: Cheile Bicazului, Pietrele Doamnei (M. Rarău), M. Ceahlău</li>
+                                <li>- prezintă numeroase defilee: Mureșului (Toplița-Deda), Olt (Tușnad)</li>
+                                <li>- relieful vulcanic este mai bine reprezentat, datorită conurilor și craterelor vulcanice mai bine păstrate precum și datorită altitudinilor mai ridicate</li>
+                                <li>- aici apare <strong>singurul lac vulcanic Lacul Sfânta Ana</strong> din Masivul Ciomatu</li>
+                                <li>- ca urmare a unei alunecări în masă a unui pinten montan în anul 1837 s-a format prin blocarea văii Bicazului lacul de prăbușire L. Roșu</li>
+                                <li>- din Masivul Hășmașul Mare izvorăsc Mureș și Olt</li>
+                            </ul>
+                            
+                            <h4>C. Grupa Curburii (Carpații Curburii)</h4>
+                            <ul class="detail-list">
+                                <li>- nu cuprinde relief vulcanic și nu are nici relief glaciar</li>
+                                <li>- apare relieful colian în M. Ciucaș- Sfinxul din Ciucaș și Tigăile</li>
+                                <li>- este alcătuită în totalitate din fliș</li>
+                                <li>- include cea mai mare depresiune intramontană din țara noastră ⇒ Dep. Brașov</li>
+                                <li>- altitudinea maximă <strong>1 954 m vf. Ciucaș din M. Ciucaș</strong></li>
+                                <li>- în depresiuni apar frecvent inversiuni termice ce determină inversiuni de vegetație (Dep Întorsura Buzăului = polul frigului din România)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="carpati-card">
+                            <h4><i class="fas fa-mountain"></i> 2. Carpații Meridionali</h4>
+                            <p><strong>Caracteristici generale:</strong></p>
+                            <ul class="detail-list">
+                                <li>- sunt cei mai masivi și mai unitari morfologic și structural</li>
+                                <li>- predomină șisturile cristaline cu intruziuni granitice (ce determină altitudinile mari), iar sporadic, la extremitatea vestică apar rocile sedimentare (calcare, conglomerate, etc.)</li>
+                                <li>- altitudinea maximă <strong>2 544 m vf. Moldoveanu</strong>, vf. Negoiu-2 535 m M. Făgăraș</li>
+                                <li>- relieful glaciar este bine reprezentat: văi glaciare, circumglaciare (multe dintre acestea ocupate în prezent de lacuri glaciare), morene, custuri (creste extrem de ascuțite)</li>
+                                <li>- bine reprezentat este și relieful periglaciar</li>
+                                <li>- relieful carstic apare mai ales la extremitatea vestică</li>
+                                <li>- culmea principală este orientată în general pe direcție vest-est</li>
+                                <li>- prezintă puține depresiuni (în general mici), trecători și pasuri</li>
+                                <li>- în M. Parâng – cel mai înalt pas din țară, pasul Urdele 2 141m</li>
+                                <li>- sunt traversați de două șosele de mare altitudine: Transfăgărășanul și Transalpina (în Parâng)</li>
+                            </ul>
+                            
+                            <h4>A. Grupa Bucegi</h4>
+                            <ul class="detail-list">
+                                <li>- predomină conglomeratele și calcarele ⇒ relief carstic: cheile Dâmbovicioarei, cheile Tătarului, peștera Ialomiței</li>
+                                <li>- nu prezintă relief vulcanic și glaciar</li>
+                                <li>- apare relieful colian în M. Bucegi- Sfinxul și Babele</li>
+                                <li>- spre N și E se termină printr-un impunător abrupt (mai ales către valea Prahovei ⇒ Abruptul Caraimanilor)</li>
+                                <li>- este cea mai importantă zonă montană din punct de vedere turistic</li>
+                                <li>- altitudinea maximă este de <strong>2 505 m vf Omu- M. Bucegi</strong></li>
+                            </ul>
+                            
+                            <h4>B. Grupa Făgăraș</h4>
+                            <ul class="detail-list">
+                                <li>- prezintă cele mai mari altitudini din Carpați ⇒ <strong>2 544 m vf. Moldoveanu</strong>, vf. Negoiu-2 535 m din M. Făgăraș</li>
+                                <li>- este alcătuită dintr-o culme nordică unitară, orientată vest-est, din care se desprind spre sud patru masive "insulare", sub forma unor culmi prelungi</li>
+                                <li>- prezintă numeroase urme ale glaciațiunii cuaternare ⇒ relief glaciar</li>
+                                <li>- prezintă un peisaj pitoresc ⇒ interes turistic deosebit</li>
+                                <li>- prezintă numeroase lacuri de baraj artificial și hidrocentrale (Vidraru pe Argeș)</li>
+                                <li>- în V se află defileul Oltului (Turnu Roșu- Cozia)</li>
+                            </ul>
+                            
+                            <h4>C. Grupa Parâng</h4>
+                            <ul class="detail-list">
+                                <li>- relieful glaciar este prezent însă pe o suprafață mai redusă decât în celelalte grupe</li>
+                                <li>- relieful carstic ⇒ Cheile Oltețului, Peștera Muierii</li>
+                                <li>- este o zonă populată din cele mai vechi timpuri, ca mărturie stând ruinele vechii reședințe a statului dac Sarmizegetusa Regia din Masivul Orăștiei situați în NV M. Șureanu și ruinele reședinței provinciei romane Dacia Felix din Dep. Hațeg- Sarmizegetusa Ulpia Traiana</li>
+                                <li>- aici se află cel mai înalt pas din țară – <strong>Urdele 2 141 m</strong></li>
+                            </ul>
+                            
+                            <h4>D. Grupa Retezat-Godeanu</h4>
+                            <ul class="detail-list">
+                                <li>- cuprinde cele mai numeroase altitudini de peste 2 000 m</li>
+                                <li>- include cele mai numeroase lacuri glaciare (80) printre care L. Bucura (cel mai extins-10 ha) și L. Zănoaga (cel mai adânc 29 m)</li>
+                                <li>- prezintă relief carstic mai ales în SV: Cheile Runcului, Izbucul Cernei</li>
+                                <li>- aici se află primul parc național din țară cu numeroase specii de plante și animale rare – <strong>Parcul Național Retezat</strong> (1931, 51 000 ha)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="carpati-card">
+                            <h4><i class="fas fa-tree"></i> 3. Carpații Occidentali</h4>
+                            <p><strong>Caracteristici generale:</strong></p>
+                            <ul class="detail-list">
+                                <li>- lipsește relieful glaciar, sporadic în M. Bihor apare relieful periglaciar</li>
+                                <li>- cea mai mare altitudine <strong>vf. Bihor (Curcubăta Mare)- 1 849 m</strong> din M. Bihor</li>
+                                <li>- prezintă o mare complexitate litologică și structurală, fiind formați dintr-un adevărat mozaic de roci: vulcanice, sedimentare și metamorfice (șisturi cristaline)</li>
+                                <li>- varietatea rocilor impune o mare varietate a reliefului</li>
+                                <li>- relieful carstic este extins și apare sub forme diferite atât exocarstice cât și endocarstice:
+                                    <ul class="sub-item">
+                                        <li>- platouri carstice cu lapiezuri și doline: Padiș- Cetățile Ponorului, Vașcău, Cărbunari</li>
+                                        <li>- văi de tip chei: Nerei, Râmeți</li>
+                                        <li>- depresiuni carstice în care s-au instalat lacurile carstice: Ighiu, Vărășoaia</li>
+                                        <li>- peșteri: Vântului (cea mai lungă din țară), Urșilor, Comarnic, Meziad, Scărișoara, Focul Viu (cu ghețari)</li>
+                                        <li>- avene adânci</li>
+                                    </ul>
+                                </li>
+                                <li>- câmpia pătrunde adânc în interiorul muntelui sub forma unor depresiuni de tip "golf"</li>
+                                <li>- prezintă văi de tip defileu: Defileul Dunării în sud (cel mai lung din Europa 144 km), Defileul Mureșului</li>
+                                <li>- prezintă cele mai bogate precipitații (1 400 m în M. Vlădeasa) pe versanții vestici, iar pe cei estici și sud-estici apare fenomenul de foehn</li>
+                                <li>- așezările rurale urcă în altitudine până la 1 600 m ⇒ sate de tip risipit numite crânguri</li>
+                                <li>- prezintă numeroase resurse de subsol: minereuri auro-argintifere, minereuri de fier, bauxită, marmură, etc.</li>
+                            </ul>
+                            
+                            <h4>A. Munții Banat</h4>
+                            <ul class="detail-list">
+                                <li>- relieful carstic este extins: Cheile Nerei, Cheile Caragului, Peștera Comarnic</li>
+                                <li>- includ Defileul Dunării cel mai lung din Europa (144 km), unde temperaturile sunt mai ridicate permițând dezvoltarea unor elemente biogeografice submediteraneene: liliacul sălbatic, vipera cu corn</li>
+                                <li>- aici se află Parcurile Naționale: Porțile de Fier, Cheile Nerei- Beușnița</li>
+                                <li>- scad altitudinal de la est (peste 1 400 m) la vest (sub 600 m)</li>
+                            </ul>
+                            
+                            <h4>B. Munții Poiana Ruscă</h4>
+                            <ul class="detail-list">
+                                <li>- sunt alcătuiți din calcare cu intruziuni granitice</li>
+                                <li>- altitudinea maximă ⇒ <strong>vf. Padeș 1 374 m</strong></li>
+                                <li>- dețin resurse importante de marmură (Ruschița)</li>
+                            </ul>
+                            
+                            <h4>C. Munții Apuseni</h4>
+                            <ul class="detail-list">
+                                <li>- relieful carstic este extins: Platourile carstice Padiș- Cetățile Ponorului, Vașcău; chei: Turzii, Râmeți; peșteri: Vântului, Scărișoara, Urșilor etc.</li>
+                                <li>- câmpia pătrunde adânc în interiorul munților sub formă de depresiuni de tip "golf"</li>
+                                <li>- prezintă o alcătuire petrografică mozaicată ⇒ diversitatea formelor de relief</li>
+                                <li>- prezintă o distribuție palmară, având în partea centrală masivul principal (nod orografic) M. Bihor, cel mai înalt din care se desprind celelalte culmi muntoase</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Câmpia Română -->
+                <div class="card romania-card" style="margin-top: 2rem;">
+                    <h3><i class="fas fa-map"></i> Câmpia Română</h3>
+                    <ul class="detail-list">
+                        <li><strong>Locație:</strong> Pe cursul inferior al Dunării, în România</li>
+                        <li><strong>Origine:</strong> Formată în Cuaternar prin sedimentarea Lacului Getic</li>
+                        <li><strong>Caracteristici:</strong>
+                            <ul class="sub-item">
+                                <li>Caracter fluvial</li>
+                                <li>Poziționată în lungul Dunării</li>
+                                <li>Evidențiată de prezența Luncii Dunării și a teraselor Dunării</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tipuri genetice de câmpii (dispuse în fâșii paralele):</strong>
+                            <ul class="sub-item">
+                                <li><strong>Câmpii tabulare:</strong> 50-100 m</li>
+                                <li><strong>Câmpii piemontane:</strong> 100-300 m</li>
+                                <li><strong>Câmpii de subsidență:</strong> sub 50 m</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Informații suplimentare despre România -->
+                <div class="card romania-card">
+                    <h3><i class="fas fa-info-circle"></i> Informații suplimentare despre relieful României</h3>
+                    
+                    <h4>Caracteristici generale ale reliefului românesc:</h4>
+                    <ul class="detail-list">
+                        <li>Suprafața totală: 238.397 km²</li>
+                        <li>Altitudinea medie: 450 m</li>
+                        <li>Cel mai înalt punct: Vârful Moldoveanu (2.544 m)</li>
+                        <li>Cel mai jos punct: Marea Neagră (0 m)</li>
+                        <li>Distribuția reliefului:
+                            <ul class="sub-item">
+                                <li>31% munți</li>
+                                <li>36% dealuri și podișuri</li>
+                                <li>33% câmpii</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h4>Resurse naturale importante:</h4>
+                    <ul class="detail-list">
+                        <li><strong>Resurse minerale:</strong> petrol, gaze naturale, cărbune, minereuri de fier, cupru, plumb, zinc, bauxită, sare, aur, argint</li>
+                        <li><strong>Resurse forestiere:</strong> păduri de foioase și conifere (27% din suprafața țării)</li>
+                        <li><strong>Resurse hidroenergetice:</strong> râuri cu potențial hidroenergetic ridicat</li>
+                        <li><strong>Resurse turistice:</strong> stațiuni montane, litoralul Mării Negre, stațiuni balneare</li>
+                    </ul>
+                    
+                    <h4>Probleme de mediu:</h4>
+                    <ul class="detail-list">
+                        <li>Eroziunea solului</li>
+                        <li>Poluarea apelor</li>
+                        <li>Defrișări</li>
+                        <li>Inundații</li>
+                        <li>Alunecări de teren</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Resumat Geografic - Relieful Europei și României</p>
+            <p>Informații preluate din documentul original</p>
+        </div>
+    </footer>
+    
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <script>
+        // Smooth scroll pentru link-urile interne
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Afișare/ascundere buton "back to top"
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
