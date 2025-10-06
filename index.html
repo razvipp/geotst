@@ -1561,159 +1561,19 @@
         });
 
 
-
-let isSpeaking = false;
-let speech = null;
-
-function speakNow() {
-    const button = document.getElementById('speakBtn');
-    
-    if (isSpeaking) {
-        // Oprește citirea
-        window.speechSynthesis.cancel();
-        isSpeaking = false;
-        button.innerHTML = '🔊 Ascultă tot site-ul';
-        button.style.background = '#4CAF50';
-        return;
-    }
-    
-    // Pornește citirea
-    button.innerHTML = '⏳ Se pregătește...';
-    button.style.background = '#FF9800';
-    
-    // Folosește setTimeout pentru a permite UI-ului să se actualizeze
-    setTimeout(() => {
-        try {
-            // Găsește punctul de start
-            const startElement = findStartElement();
-            
-            if (!startElement) {
-                alert('Nu am găsit punctul de start!');
-                button.innerHTML = '🔊 Ascultă tot site-ul';
-                button.style.background = '#4CAF50';
-                return;
-            }
-            
-            // Extrage tot textul
-            const textToRead = extractAllText(startElement);
-            
-            if (!textToRead || textToRead.trim().length < 10) {
-                alert('Textul găsit este prea scurt!');
-                button.innerHTML = '🔊 Ascultă tot site-ul';
-                button.style.background = '#4CAF50';
-                return;
-            }
-            
-            console.log('Text de citit:', textToRead.substring(0, 200) + '...');
-            
-            // Creează utterance-ul
-            speech = new SpeechSynthesisUtterance(textToRead);
-            speech.lang = 'ro-RO';
-            speech.rate = 1.0;
-            speech.pitch = 1.0;
-            speech.volume = 1.0;
-            
-            // Evenimente
-            speech.onstart = function() {
-                isSpeaking = true;
-                button.innerHTML = '⏹️ Oprește';
-                button.style.background = '#ff4444';
-                console.log('Începe citirea...');
-            };
-            
-            speech.onend = function() {
-                isSpeaking = false;
-                button.innerHTML = '🔊 Ascultă din nou';
-                button.style.background = '#4CAF50';
-                console.log('Citirea s-a terminat');
-            };
-            
-            speech.onerror = function(event) {
-                isSpeaking = false;
-                button.innerHTML = '🔊 Reîncearcă';
-                button.style.background = '#FF9800';
-                console.error('Eroare:', event);
-                alert('Eroare la citire: ' + event.error);
-            };
-            
-            // FOLOSEȘTE speak() DIRECT - IMPORTANT!
-            window.speechSynthesis.speak(speech);
-            
-        } catch (error) {
-            console.error('Eroare generală:', error);
-            button.innerHTML = '🔊 Ascultă tot site-ul';
-            button.style.background = '#4CAF50';
-            alert('Eroare: ' + error.message);
-        }
-    }, 50);
+function speakPage() {
+  const text = document.body.innerText; // Citește tot textul din pagină
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.lang = 'ro-RO'; // Limba română
+  speech.rate = 1; // Viteza
+  speech.pitch = 1; // Tonul
+  window.speechSynthesis.speak(speech);
 }
 
-function findStartElement() {
-    // Încearcă mai multe metode să găsească elementul
-    const elements = document.querySelectorAll('h2, h1, .title, .heading');
-    
-    for (let element of elements) {
-        const text = element.textContent || element.innerText || '';
-        if (text.includes('Relieful Europei') || text.includes('Relieful') || text.includes('Europei')) {
-            return element;
-        }
-    }
-    
-    // Fallback la primul h2
-    return document.querySelector('h2') || document.querySelector('.content') || document.body;
-}
-
-function extractAllText(startElement) {
-    let fullText = '';
-    let current = startElement;
-    
-    // Adaugă textul din elementul de start
-    addTextFromElement(startElement);
-    
-    // Parcurge toate elementele următoare
-    while (current && current.nextElementSibling) {
-        current = current.nextElementSibling;
-        addTextFromElement(current);
-    }
-    
-    function addTextFromElement(element) {
-        // Skip elementele nedorite
-        if (!element || element.tagName === 'SCRIPT' || element.tagName === 'STYLE' || 
-            element.tagName === 'BUTTON' || element.tagName === 'NAV') {
-            return;
-        }
-        
-        // Verifică dacă elementul este vizibil
-        const style = window.getComputedStyle(element);
-        if (style.display === 'none' || style.visibility === 'hidden') {
-            return;
-        }
-        
-        const text = element.textContent || element.innerText || '';
-        if (text && text.trim()) {
-            const cleanText = text.trim().replace(/\s+/g, ' ');
-            // Evită duplicatele
-            if (!fullText.includes(cleanText)) {
-                fullText += cleanText + '. ';
-            }
-        }
-    }
-    
-    return fullText.trim();
-}
-
-// Verifică dacă browserul suportă funcționalitatea
-if (!window.speechSynthesis) {
-    document.getElementById('speakBtn').disabled = true;
-    document.getElementById('speakBtn').innerHTML = '❌ Browser nesuportat';
-    document.getElementById('speakBtn').style.background = '#9E9E9E';
-} else {
-    // Testează vocile disponibile
-    speechSynthesis.getVoices();
-}
     </script>
 </body>
 </html>
+
 
 
 
