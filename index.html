@@ -497,7 +497,7 @@
             <p class="subtitle">Resumat geografic complet - Toate informațiile din document</p>
         </div>
     </header>
-    
+     <button style="background-color: green;color: white; margin-left: 50px;margin-top: 50px; width: 100px; position: absolute;" onclick="toggleSpeak()" id="speakBtn">🔊 Ascultă conținutul</button>
     <nav>
         <div class="container nav-container">
             <div class="logo">
@@ -1559,7 +1559,73 @@
                 backToTopButton.style.display = 'none';
             }
         });
+
+
+
+
+
+        
+let isSpeaking = false;
+
+function toggleSpeak() {
+    const button = document.getElementById('speakBtn');
+    
+    if (!isSpeaking) {
+        // Începe de la primul h2 cu textul "Relieful Europei"
+        const startElement = document.querySelector('h2');
+        let textToRead = '';
+        
+        if (startElement) {
+            // Caută toate elementele de la startElement în jos
+            let allElements = document.querySelectorAll('*');
+            let startCollecting = false;
+            
+            for (let element of allElements) {
+                if (element === startElement) {
+                    startCollecting = true;
+                }
+                
+                if (startCollecting) {
+                    const text = element.textContent || element.innerText;
+                    if (text && text.trim() && 
+                        !element.tagName.toLowerCase().match(/script|style|button/)) {
+                        textToRead += text.trim() + '. ';
+                    }
+                }
+            }
+        }
+        
+        if (!textToRead.trim()) {
+            alert('Nu am găsit conținut de citit!');
+            return;
+        }
+        
+        const speech = new SpeechSynthesisUtterance(textToRead);
+        speech.lang = 'ro-RO';
+        
+        speech.onstart = () => {
+            isSpeaking = true;
+            button.innerHTML = '⏹️ Oprește';
+            button.style.background = '#ff4444';
+        };
+        
+        speech.onend = () => {
+            isSpeaking = false;
+            button.innerHTML = '🔊 Ascultă';
+            button.style.background = '#4CAF50';
+        };
+        
+        window.speechSynthesis.speak(speech);
+        
+    } else {
+        window.speechSynthesis.cancel();
+        isSpeaking = false;
+        button.innerHTML = '🔊 Ascultă';
+        button.style.background = '#4CAF50';
+    }
+}
     </script>
 </body>
 </html>
+
 
